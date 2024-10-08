@@ -11,39 +11,55 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: Trebuchet MS;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   letter-spacing: 0.05pc;
   color: white;
   line-height: 1.5;
+}
+
+h2{
+  margin-top: 0;
+  color: #6ea9c6;
+  text-transform: uppercase;
 }
  
 a {
   color: #aac5da;
 }
 
-h3{
-  color: #a9cbde;
-  text-transform: uppercase;
+.f14 {
+  font-size: 14px;
 }
 
-#main-container{
-  width: 75%;
+
+a.disabled:hover {
+  cursor:not-allowed;
+}
+
+.disabled-link {
+  pointer-events: none;
+}
+
+
+
+.main-container{
+  width: 70%;
   margin: 0 auto;
   padding: 0;
 }
 
 #top-content {
-  position: absolute;
-  margin-left: auto;
+  position: relative;
+  width: 395px;
   top: 0;
-  right: 12.5%;
   background-color:rgba(0, 0, 0, 0.6) ;
   padding: 5px 10px;
   font-weight: normal;
   list-style-type: none;
   display: flex;
   margin: 0;
+  margin-left: auto;
 }
 
 #top-content a{
@@ -80,8 +96,8 @@ h3{
 
 #navbar img {
   position: absolute;
-  top: 15px;
-  left: 13%;
+  top: 50px;
+  left: 15%;
   margin-left: 10px;
 }
 
@@ -91,6 +107,7 @@ h3{
   justify-content: end;
   list-style-type: none;
   float: right;
+  padding-right: 10px;
 }
 
 #nav-links a{
@@ -117,10 +134,12 @@ h3{
 
 .pipe li:not(:last-child)::after {
   content: '|';
+  font-size: 18px;
 }
 
 #top-content li:not(:last-child)::after {
   color: #a9cbde;
+  font-size: 14px;
 }
 
 #height-space{
@@ -138,11 +157,15 @@ h3{
   text-align: center;
   background-color: #3d5179;
   color: #a2d0e2;
-  font-size: 14px;
   padding: 4px 0;
   display: flex; 
   align-items: center; 
   justify-content: center; 
+}
+
+.footer-container {
+  padding-top: 10px;
+  height: 100px;
 }
 
 #footer a {

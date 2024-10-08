@@ -1,18 +1,10 @@
-h2{
-    margin-top: 0;
-    color: #6ea9c6;
-}
-
 #service-section{
     padding: 10px;
-    background-color:  #071322;
-    opacity: 0.8;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0;
     justify-content: start;
-    font-size: 16px;
     border: 1px solid transparent;
     border-left-color: #414D5F;
     border-right-color: #414D5F;
@@ -36,12 +28,15 @@ h2{
     text-align: start;
     padding-left: 20px;
 }
+#service-images a:hover{
+   color: white;
+}
 
-.borderless-container{
+.links-container{
     border-bottom: 1px solid #606678;
     border-top: 1px solid #606678;
-    width: 90%;
-    margin: 10px;
+    width: 100%;
+    margin: 10px 0px;
     padding: 10px 0px;
 }
 

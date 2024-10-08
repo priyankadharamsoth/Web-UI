@@ -1,0 +1,24 @@
+#top-content li:not(:last-child)::after {
+    color: #a9cbde;
+    font-size: 14px;
+  }
+
+  #top-content {
+    position: relative;
+    width: 395px;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.6) ;
+    padding: 5px 10px;
+    font-weight: normal;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+  }
+  
+  #top-content a{
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    margin: 5px;
+  }
