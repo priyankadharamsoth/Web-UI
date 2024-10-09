@@ -1,18 +1,35 @@
+//for content change
 document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('.nav-link');
+    const homeLink = document.getElementById('homeLink');
+    const servicesLink = document.getElementById('servicesLink');
+    const homeContent = document.getElementById('homePageContent');
+    const serviceContent = document.getElementById('servicePageContent');
 
-    navLinks.forEach(link => {
-        if (link.href === window.location.href) {
-            link.classList.add('active');
-        }
+    // Function to show home content
+    function showHomeContent() {
+        homeContent.style.display = 'block';
+        serviceContent.style.display = 'none';
+        servicesLink.style.backgroundColor = "" ;
+        servicesLink.style.borderRadius = "";
+        servicesLink.style.color = "" ;
+    }
 
-        link.addEventListener('click', () => {
-            clearActive();
-            link.classList.add('active');
-        });
+    // Function to show services content
+    function showServiceContent() {
+        servicesLink.style.color = 'white';
+        servicesLink.style.background = '#465677';
+        servicesLink.style.borderRadius = '5px';
+        homeContent.style.display = 'none';
+        serviceContent.style.display = 'block';
+    }
+
+    homeLink.addEventListener('click', function(event) {
+        showHomeContent();
     });
 
-    function clearActive() {
-        navLinks.forEach(link => link.classList.remove('active'));
-    }
+    servicesLink.addEventListener('click', function(event) {
+        showServiceContent();
+    });
+
+    showHomeContent();
 });
