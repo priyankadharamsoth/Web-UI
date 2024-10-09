@@ -1,14 +1,18 @@
+#servicePageContent{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #service-section{
-    padding: 10px;
+    padding: 25px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0;
     justify-content: start;
-    border: 1px solid transparent;
-    border-left-color: #414D5F;
-    border-right-color: #414D5F;
-    border-bottom-color: #414D5F;
+    border: 1px solid #414D5F;;
+    box-sizing: border-box;
 }
 
 #service-images{
@@ -53,15 +57,20 @@
     border-top: 1px solid #606678;
 }
 
+#service-contact p{
+    margin: 15px 0;
+}
+
 #request-contact {
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
     color: white;
     font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: normal;
     background-color: #415887;
     border: 1px solid #415887;
-    border-radius: 8px;
+    border-radius: 10px;
     display: inline-block;
-    padding: 4px;
+    padding: 6px;
 }
 
