@@ -1,4 +1,3 @@
-//for content change
 document.addEventListener('DOMContentLoaded', function () {
     const homeLink = document.getElementById('homeLink');
     const servicesLink = document.getElementById('servicesLink');
@@ -9,18 +8,16 @@ document.addEventListener('DOMContentLoaded', function () {
     function showHomeContent() {
         homeContent.style.display = 'block';
         serviceContent.style.display = 'none';
-        servicesLink.style.backgroundColor = "" ;
-        servicesLink.style.borderRadius = "";
-        servicesLink.style.color = "" ;
+        homeLink.classList.add('selected-tab');
+        servicesLink.classList.remove('selected-tab');
     }
 
     // Function to show services content
     function showServiceContent() {
-        servicesLink.style.color = 'white';
-        servicesLink.style.background = '#465677';
-        servicesLink.style.borderRadius = '5px';
         homeContent.style.display = 'none';
         serviceContent.style.display = 'block';
+        servicesLink.classList.add('selected-tab');
+        homeLink.classList.remove('selected-tab');
     }
 
     homeLink.addEventListener('click', function(event) {

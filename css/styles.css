@@ -21,6 +21,7 @@
     flex-wrap: nowrap;
     margin: 0;
     padding: 15px 10px;
+    border: 1px solid #414D5F;
 }
 
 .tile {

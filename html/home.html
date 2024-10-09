@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="../css/common_styles.css">
         <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/service_styles.css">
         <script src="../js/script.js"></script>
     </head>
     <body>
        <div class = "main-container">
             <!--top right content-->
-            <iframe src="common/top-content.html" style="border:none;height: 50px;width: 100%;margin: 0;"></iframe>
+            <iframe src="common/top-content.html" style="border:none;height: 40px;width: 100%;margin: 0;"></iframe>
             <main>
                 <!--navbar-->
                 <header>
@@ -18,7 +18,7 @@
                         <div id = "navbar">
                             <img src="../images/logo.png" alt="Logo">
                             <ul id="nav-links" class = "pipe">
-                                <li><a href="#" id = "homeLink" class="nav-link">Home</a></li>
+                                <li><a href="#" id = "homeLink" class="nav-link selected-tab">Home</a></li>
                                 <li><a href="#" class="nav-link disabled">About FTZWS</a></li>
                                 <li><a href="#" id = "servicesLink" class="nav-link">Our Services</a></li>
                                 <li><a href="#" class="nav-link disabled">Our Clients</a></li>
@@ -34,7 +34,7 @@
                     </div>
                     <!--for images-->
                     <div class = "main-content-wrapper">
-                        <section id = "image-tiles-container", class="content-border">
+                        <section id = "image-tiles-container">
                             <article class = "tile">
                                 <img src= "../images/tile1.png" alt = "tile1">
                                 <div class="tile-description">
@@ -62,11 +62,63 @@
                         </section>
                     </div>
                 </div>
-                <iframe src="/html/services.html" id = "servicePageContent" style="border:none;width: 100%;margin: 0; height: 700px;"></iframe>
+                <div id = "servicePageContent">
+                    <div id = "height-space"></div>
+                        <div class="main-content-wrapper">
+                            <section id = "service-section" >
+                                <aside id = "service-images">
+                                    <img src = "../images/casestudies_industries-column1.jpg">
+                                    <img src = "../images/casestudies_industries-column2.jpg">
+                                    <div class = "links-container" class = "border">
+                                        <a href="">Technology Services</a>
+                                        <a href="">Public Warehousing</a>
+                                        <a href="">Yard Storage</a>
+                                    </div>
+                                </aside>
+                                <article id = "service-article">
+                                    <h2>Our Services</h2>
+                                    <p>
+                                        Our highly trained and experienced staff can handle even the most
+                                        complex distribution needs. We've designed a package of benefits that
+                                        work together to streamline your experience in the Miami Free Trade
+                                        Zone. Tell us what you need and we'll provide it. Our primary services
+                                        are <a href="" class= "disabled-link">Technology_Seryjces</a>, 
+                                        <a href=""  class= "disabled-link"> Public Warehousing</a> and 
+                                        <a href=""  class= "disabled-link">Yard Storage</a>
+                                    </p>
+                                    <p>
+                                        The Zone's un-paralleled Insfrastructure includes power,
+                                        communication systems, fiber optics, security, and easy access to
+                                        land, rail, sea, and air transportation. Our clients can tap into more
+                                        than 850,000 square feet of mixed-use office, showroom and
+                                        warehouse facilities in the Zone, including:
+                                    </p>
+                                <ul>
+                                    <li>Two public warehouses with 33,000 feet each.</li>
+                                    <li>Exhibition space in two showroom malls, each containing
+                                        approximately 75,000 square feet.</li>
+                                    <li>
+                                        A commercial building adjacent to the warehouses with offices and
+                                        other s aces.
+                                    </li>
+                                    <li>
+                                        The offices of U.S Customs &Border Patrol, along with several
+                                        other federal agencies integral to trade facilitation and
+                                        compliance.
+                                    </li>
+                                </ul>
+                                <div id = "service-contact">
+                                    <p>Want to see how FTZ World Services can help you?</p>
+                                    <button id = "request-contact">Request Someone to Contact You ></button>
+                                </div>
+                                </article>
+                            </section>
+                        </div>
+                </div>                    
                 <!--footer-->
-                <footer class ="footer-container">
+                <footer id ="footer-container">
                     <div id="footer" class="f14">
-                        Copyright &copy; FTZ World Services. All rights reserved.
+                        Copyright &copy;2024 FTZ World Services. All rights reserved.
                         <ul class="pipe" id="footer-links">
                             <li><a href="" class="disabled-link">Contact Us</a></li>
                             <li><a href="" class="disabled-link">Request a Quote</a></li>
